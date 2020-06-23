@@ -5,7 +5,7 @@ const Rastreio = require('./Controller/rastreio')
 
 bot.on('ready', () => {
     console.log("Bot Inicializado")
-    console.log(`Atualmente ${bot.guilds.size} servidores usam o Consumista.`)
+    console.log(`Atualmente ${bot.guilds.cache.size} servidores usam o Consumista.`)
 })
 bot.on('message', async (e) => {
     const channel = e.channel

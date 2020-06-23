@@ -10,6 +10,10 @@ class Rastreio {
     async sendEmbed(sender, channelMessage) {
         request(this.url, async (error, response, body) => {
             const json = await JSON.parse(body)
+            if(json['erro']){
+                channelMessage.send(json['msg'])
+                return
+            }
             const fields =  new Array()
             let lastUpdate;
             let lastAction

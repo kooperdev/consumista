@@ -14,7 +14,7 @@ bot.on('message', async (e) => {
     if (message.startsWith(`${prefix}`)) {
         const args = message.split(" ");
         if (args[0] === "c.rast" || args[0] == "c.rastrear") {
-            if (args.length > 0) {
+            if (args.length > 1) {
                 const codigo = args[1]
                 const rastreio = new Rastreio(codigo);
                 rastreio.sendEmbed(sender, channel)

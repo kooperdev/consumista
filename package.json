@@ -1,0 +1,26 @@
+{
+  "name": "consumista",
+  "version": "1.0.0",
+  "description": "bot consumista feito para consumidor, viva ao consumismo!",
+  "main": "./src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/main.js"
+  },
+  "keywords": [
+    "consumidor",
+    "consumista",
+    "comunista",
+    "capitalista",
+    "correios",
+    "rastreamento",
+    "cupons",
+    "descontos"
+  ],
+  "author": "K00PER (Josafa Dieb)",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "request": "^2.88.2"
+  }
+}

@@ -30,23 +30,19 @@ bot.on('message', async (e) => {
             case "c.rast":
                 if (args.length > 1) {
                     const codigoRast = args[1]
-                    const rastreio = new Rastreio(codigoRast);
-                    rastreio.sendEmbed(sender, channel)
+                    new Rastreio(codigoRast).sendEmbed(sender, channel)
                 }
                 break;
             case "c.dolar":
-                const dollar = new Moeda('USD-BRL');
-                dollar.sendEmbed(sender, channel)
+                new Moeda('USD-BRL').sendEmbed(sender, channel)
                 break;
             case "c.euro":
-                const euro = new Moeda('EUR-BRL');
-                euro.sendEmbed(sender, channel)
+                new Moeda('EUR-BRL').sendEmbed(sender, channel)
                 break;
             case "c.cep":
                 if (args.length > 1) {
                     const codigoCep = `${args[1]}`.replace('-', '')
-                    const cep = new Cep(codigoCep)
-                    cep.sendEmbed(sender, channel)
+                    new Cep(codigoCep).sendEmbed(sender, channel)
                 }
                 break;
             case "c.cup":

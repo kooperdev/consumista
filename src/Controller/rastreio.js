@@ -9,6 +9,10 @@ class Rastreio {
     }
     async sendEmbed(sender, channelMessage) {
         request(this.url, async (error, response, body) => {
+            if(response.statusCode != 200){
+                channelMessage.send("Site dos correios não está respondendo.")
+                return
+            }
             const json = await JSON.parse(body)
             if(json['erro']){
                 channelMessage.send(json['msg'])

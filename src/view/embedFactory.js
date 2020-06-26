@@ -26,7 +26,7 @@ module.exports.embedFactory = function(title
 	image: {
 		url: imageUrl,
 	},
-	timestamp: new Date(),
+	timestamp: undefined,
 	footer: {
 		text: footerText,
 		icon_url: footerIcon,

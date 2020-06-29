@@ -1,12 +1,14 @@
 # Consumista
 O Consumista é um bot para discord que oferece alguns recursos para servidores de discord, que auxiliam usuários em rasterio de produtos dos correios, procura de cupons de descontos, jogos nas plataformas mais famosa do mundo, venda de protudos para doadores anunciar vendas e só! 
 
+OS USUARIOS DEVEM TER ACESSO AOS CARGOS OLX e CONSUMIDOR para as funções.
+
 ## Como instalar?
 ###### 1° Acesse o site: https://kooper.dev/bots/consumista/
 
 ###### 2° Clique no botão CONVITE para adiciona-lo no seu servidor
 
-###### 3° Crie um cargo com nome CONSUMIDOR, exatamente com está em maiúsculo
+###### 3° Crie um cargo com nome CONSUMIDOR e OLX, exatamente com está em maiúsculo
 
 ###### 4° teste os comandos abaixo.
 

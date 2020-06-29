@@ -4,7 +4,8 @@ const { token, prefix, canal } = require('../config.json')
 const Rastreio = require('./Controller/rastreio')
 const Moeda = require('./Controller/cambio')
 const Cep = require('./Controller/cep')
-
+const Makert = require('./Controller/market')
+const Market = require('./Controller/market');
 bot.on('ready', () => {
     console.log("Dependência carregadas")
     console.log("Consumista Bot está online")
@@ -52,7 +53,14 @@ bot.on('message', async (e) => {
                 channel.send('Em desenvolvimento..')
                 break;
             case "c.market":
-                channel.send('Em desenvolvimento..')
+                e.delete()
+                if(args.length > 1){
+                let url = args[1]
+                    new Market(url).sendEmbed(sender, channel)
+                    console.log(url)
+                return
+                }
+                channel.send(`${sender} coloque a URL do site.`)
                 break;
             default:
                 break;
